@@ -1,15 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic);
+@import '../lib/css/colors';
+
 body {
 	font-family: sans-serif;
 }
 
+.page-title {
+	font-family: 'Lobster Two', cursive;
+	font-size: 108px;
+}
+h1.page-title {
+	margin:0;
+	padding:0;
+}
+
+.page-subheading {
+	font-family: 'Lobster Two', cursive;
+	font-size: 26px;
+}
 
 .color-def {
-	background-color: #5a228e;
+	background-color: $interface-fg;
 	color: white;
 }
 
 .color-sec {
-	background-color: #612a9a;
+	background-color: lighten($interface-fg, 5%);
 	color: white;
 }
 
