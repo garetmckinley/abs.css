@@ -1,0 +1,189 @@
+/*    GRID SYSTEM   */
+$max-layers: 50;
+$max-columns: 12;
+$max-rows: 8;
+
+/* PADDING */
+$padding-top: 10px;
+$padding-right: 10px;
+$padding-bottom: 10px;
+$padding-left: 10px;
+
+/* COLORS */
+$interface-bg: rgb(170, 170, 170);
+$interface-fg: rgb(170, 170, 170);
+
+@import "colors";
+
+/* UI COLORS */
+$dialog-bg: $interface-fg;
+
+$toolbar-bg: $interface-fg;
+$toolbar-button-bg: lighter($interface-fg, 10%);
+$toolbar-button-fg: darken($interface-fg, 30%);
+
+$toolbar-height: 50px;
+
+$dialog-columns: 6; // MUST BE AN EVEN NUMBER
+
+$breakpoints: (
+  "small"  : 600px,
+  "medium" : 900px,
+  "large"  : 1200px
+);
+
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+
+$placeholders: ();
+
+@mixin breakpoint($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+  
+  @if $value != null {                                    // 1
+    $current-breakpoint: $breakpoint         !global;     // 2
+    @media (max-width: $value) { @content; }              // 3
+    $current-breakpoint: $default-breakpoint !global;     // 5
+  }
+  
+  @else {                                  
+    @warn "Invalid breakpoint `#{$breakpoint}`.";         // 6
+  }
+}
+
+@mixin valign() {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+/*    APP SCREEN    */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.abs {
+  position: absolute;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.fullwidth {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.fullheight {
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+}
+
+.snap-bottom {
+  bottom: $padding-bottom;
+}
+
+.snap-top {
+  top: $padding-top;
+}
+
+.snap-top-right {
+  top: $padding-top;
+  right: $padding-right;
+}
+
+/* GRID GENERATION */
+$i: 0;
+@while $i <= $max-layers {
+  .layer-#{$i} { position:relative; z-index: $i; }
+  $i: $i + 1;
+}
+
+$i: 0;
+@while $i <= $max-columns {
+  .col-#{$i} { width: (100% / $max-columns) * $i + 0.005%; }
+  $i: $i + 1;
+}
+
+$i: 0;
+@while $i <= $max-columns {
+  .col-offset-#{$i} { left: (100% / $max-columns) * $i; }
+  $i: $i + 1;
+}
+
+$i: 0;
+@while $i <= $max-rows {
+  .row-#{$i} { height: (100vh / $max-rows) * $i; }
+  $i: $i + 1;
+}
+
+$i: 0;
+@while $i <= $max-rows {
+  .row-offset-#{$i} { top: (100vh / $max-rows) * $i; }
+  $i: $i + 1;
+}
+
+
+/* UI ELEMENTS */
+.scroll {
+  overflow: scroll;
+}
+
+.dialog {
+  position: absolute;
+  width: (100% / $max-columns) * $dialog-columns + 0.005%;
+  left: (100% / $max-columns) * (($max-columns - $dialog-columns) / 2);
+  @extend .row-2;
+  @include valign();
+  background-color: $dialog-bg;
+  @include breakpoint(small) {
+    left: 0;
+    width: 100%;
+  }
+}
+
+.toolbar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: $toolbar-height;
+  background-color: $toolbar-bg;
+
+  a.button, a:link {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    background-color: $toolbar-button-bg;
+    text-decoration: none;
+    color: $toolbar-button-fg;
+    .button-title {
+      padding: 5px;
+      margin-top: 8px;
+      color: $toolbar-button-fg;
+    }
+  }
+}
+
+.valign-middle {
+  position: relative;
+  @include valign();
+}
+
+.text-center {
+  text-align: center;
+}

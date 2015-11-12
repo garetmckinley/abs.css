@@ -1,0 +1,427 @@
+/*    GRID SYSTEM   */
+/* PADDING */
+/* COLORS */
+/* UI COLORS */
+/*    APP SCREEN    */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; }
+
+.abs {
+  position: absolute; }
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.fullwidth {
+  width: 100%;
+  left: 0;
+  right: 0; }
+
+.fullheight {
+  height: 100vh;
+  top: 0;
+  bottom: 0; }
+
+.snap-bottom {
+  bottom: 10px; }
+
+.snap-top {
+  top: 10px; }
+
+.snap-top-right {
+  top: 10px;
+  right: 10px; }
+
+/* GRID GENERATION */
+.layer-0 {
+  position: relative;
+  z-index: 0; }
+
+.layer-1 {
+  position: relative;
+  z-index: 1; }
+
+.layer-2 {
+  position: relative;
+  z-index: 2; }
+
+.layer-3 {
+  position: relative;
+  z-index: 3; }
+
+.layer-4 {
+  position: relative;
+  z-index: 4; }
+
+.layer-5 {
+  position: relative;
+  z-index: 5; }
+
+.layer-6 {
+  position: relative;
+  z-index: 6; }
+
+.layer-7 {
+  position: relative;
+  z-index: 7; }
+
+.layer-8 {
+  position: relative;
+  z-index: 8; }
+
+.layer-9 {
+  position: relative;
+  z-index: 9; }
+
+.layer-10 {
+  position: relative;
+  z-index: 10; }
+
+.layer-11 {
+  position: relative;
+  z-index: 11; }
+
+.layer-12 {
+  position: relative;
+  z-index: 12; }
+
+.layer-13 {
+  position: relative;
+  z-index: 13; }
+
+.layer-14 {
+  position: relative;
+  z-index: 14; }
+
+.layer-15 {
+  position: relative;
+  z-index: 15; }
+
+.layer-16 {
+  position: relative;
+  z-index: 16; }
+
+.layer-17 {
+  position: relative;
+  z-index: 17; }
+
+.layer-18 {
+  position: relative;
+  z-index: 18; }
+
+.layer-19 {
+  position: relative;
+  z-index: 19; }
+
+.layer-20 {
+  position: relative;
+  z-index: 20; }
+
+.layer-21 {
+  position: relative;
+  z-index: 21; }
+
+.layer-22 {
+  position: relative;
+  z-index: 22; }
+
+.layer-23 {
+  position: relative;
+  z-index: 23; }
+
+.layer-24 {
+  position: relative;
+  z-index: 24; }
+
+.layer-25 {
+  position: relative;
+  z-index: 25; }
+
+.layer-26 {
+  position: relative;
+  z-index: 26; }
+
+.layer-27 {
+  position: relative;
+  z-index: 27; }
+
+.layer-28 {
+  position: relative;
+  z-index: 28; }
+
+.layer-29 {
+  position: relative;
+  z-index: 29; }
+
+.layer-30 {
+  position: relative;
+  z-index: 30; }
+
+.layer-31 {
+  position: relative;
+  z-index: 31; }
+
+.layer-32 {
+  position: relative;
+  z-index: 32; }
+
+.layer-33 {
+  position: relative;
+  z-index: 33; }
+
+.layer-34 {
+  position: relative;
+  z-index: 34; }
+
+.layer-35 {
+  position: relative;
+  z-index: 35; }
+
+.layer-36 {
+  position: relative;
+  z-index: 36; }
+
+.layer-37 {
+  position: relative;
+  z-index: 37; }
+
+.layer-38 {
+  position: relative;
+  z-index: 38; }
+
+.layer-39 {
+  position: relative;
+  z-index: 39; }
+
+.layer-40 {
+  position: relative;
+  z-index: 40; }
+
+.layer-41 {
+  position: relative;
+  z-index: 41; }
+
+.layer-42 {
+  position: relative;
+  z-index: 42; }
+
+.layer-43 {
+  position: relative;
+  z-index: 43; }
+
+.layer-44 {
+  position: relative;
+  z-index: 44; }
+
+.layer-45 {
+  position: relative;
+  z-index: 45; }
+
+.layer-46 {
+  position: relative;
+  z-index: 46; }
+
+.layer-47 {
+  position: relative;
+  z-index: 47; }
+
+.layer-48 {
+  position: relative;
+  z-index: 48; }
+
+.layer-49 {
+  position: relative;
+  z-index: 49; }
+
+.layer-50 {
+  position: relative;
+  z-index: 50; }
+
+.col-0 {
+  width: 0.005%; }
+
+.col-1 {
+  width: 8.33833%; }
+
+.col-2 {
+  width: 16.67167%; }
+
+.col-3 {
+  width: 25.005%; }
+
+.col-4 {
+  width: 33.33833%; }
+
+.col-5 {
+  width: 41.67167%; }
+
+.col-6 {
+  width: 50.005%; }
+
+.col-7 {
+  width: 58.33833%; }
+
+.col-8 {
+  width: 66.67167%; }
+
+.col-9 {
+  width: 75.005%; }
+
+.col-10 {
+  width: 83.33833%; }
+
+.col-11 {
+  width: 91.67167%; }
+
+.col-12 {
+  width: 100.005%; }
+
+.col-offset-0 {
+  left: 0%; }
+
+.col-offset-1 {
+  left: 8.33333%; }
+
+.col-offset-2 {
+  left: 16.66667%; }
+
+.col-offset-3 {
+  left: 25%; }
+
+.col-offset-4 {
+  left: 33.33333%; }
+
+.col-offset-5 {
+  left: 41.66667%; }
+
+.col-offset-6 {
+  left: 50%; }
+
+.col-offset-7 {
+  left: 58.33333%; }
+
+.col-offset-8 {
+  left: 66.66667%; }
+
+.col-offset-9 {
+  left: 75%; }
+
+.col-offset-10 {
+  left: 83.33333%; }
+
+.col-offset-11 {
+  left: 91.66667%; }
+
+.col-offset-12 {
+  left: 100%; }
+
+.row-0 {
+  height: 0vh; }
+
+.row-1 {
+  height: 12.5vh; }
+
+.row-2, .dialog {
+  height: 25vh; }
+
+.row-3 {
+  height: 37.5vh; }
+
+.row-4 {
+  height: 50vh; }
+
+.row-5 {
+  height: 62.5vh; }
+
+.row-6 {
+  height: 75vh; }
+
+.row-7 {
+  height: 87.5vh; }
+
+.row-8 {
+  height: 100vh; }
+
+.row-offset-0 {
+  top: 0vh; }
+
+.row-offset-1 {
+  top: 12.5vh; }
+
+.row-offset-2 {
+  top: 25vh; }
+
+.row-offset-3 {
+  top: 37.5vh; }
+
+.row-offset-4 {
+  top: 50vh; }
+
+.row-offset-5 {
+  top: 62.5vh; }
+
+.row-offset-6 {
+  top: 75vh; }
+
+.row-offset-7 {
+  top: 87.5vh; }
+
+.row-offset-8 {
+  top: 100vh; }
+
+/* UI ELEMENTS */
+.scroll {
+  overflow: scroll; }
+
+.dialog {
+  position: absolute;
+  width: 50.005%;
+  left: 25%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #5a228e; }
+  @media (max-width: 600px) {
+    .dialog {
+      left: 0;
+      width: 100%; } }
+
+.toolbar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background-color: #5a228e; }
+  .toolbar a.button, .toolbar a:link {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    background-color: lighter(#5a228e, 10%);
+    text-decoration: none;
+    color: #0c0413; }
+    .toolbar a.button .button-title, .toolbar a:link .button-title {
+      padding: 5px;
+      margin-top: 8px;
+      color: #0c0413; }
+
+.valign-middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.text-center {
+  text-align: center; }
+
+/*# sourceMappingURL=abs.css.map */
