@@ -2,13 +2,26 @@
 /* PADDING */
 /* COLORS */
 /* UI COLORS */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  display: none; }
+
+::-webkit-scrollbar-thumb {
+  background: #0079ff; }
+
+::-webkit-scrollbar-track {
+  background: #006de5; }
+
 /*    APP SCREEN    */
 body {
   position: absolute;
   width: 100%;
   height: 100vh;
   margin: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  scrollbar-face-color: #0079ff;
+  scrollbar-track-color: #006de5; }
 
 .abs {
   position: absolute; }
@@ -378,6 +391,306 @@ body {
 .row-offset-8 {
   top: 100vh; }
 
+.height-10 {
+  height: 10px; }
+
+.height-20 {
+  height: 20px; }
+
+.height-30 {
+  height: 30px; }
+
+.height-40 {
+  height: 40px; }
+
+.height-50 {
+  height: 50px; }
+
+.height-60 {
+  height: 60px; }
+
+.height-70 {
+  height: 70px; }
+
+.height-80 {
+  height: 80px; }
+
+.height-90 {
+  height: 90px; }
+
+.height-100 {
+  height: 100px; }
+
+.height-110 {
+  height: 110px; }
+
+.height-120 {
+  height: 120px; }
+
+.height-130 {
+  height: 130px; }
+
+.height-140 {
+  height: 140px; }
+
+.height-150 {
+  height: 150px; }
+
+.height-160 {
+  height: 160px; }
+
+.height-170 {
+  height: 170px; }
+
+.height-180 {
+  height: 180px; }
+
+.height-190 {
+  height: 190px; }
+
+.height-200 {
+  height: 200px; }
+
+.height-210 {
+  height: 210px; }
+
+.height-220 {
+  height: 220px; }
+
+.height-230 {
+  height: 230px; }
+
+.height-240 {
+  height: 240px; }
+
+.height-250 {
+  height: 250px; }
+
+.height-260 {
+  height: 260px; }
+
+.height-270 {
+  height: 270px; }
+
+.height-280 {
+  height: 280px; }
+
+.height-290 {
+  height: 290px; }
+
+.height-300 {
+  height: 300px; }
+
+.height-310 {
+  height: 310px; }
+
+.height-320 {
+  height: 320px; }
+
+.height-330 {
+  height: 330px; }
+
+.height-340 {
+  height: 340px; }
+
+.height-350 {
+  height: 350px; }
+
+.height-360 {
+  height: 360px; }
+
+.height-370 {
+  height: 370px; }
+
+.height-380 {
+  height: 380px; }
+
+.height-390 {
+  height: 390px; }
+
+.height-400 {
+  height: 400px; }
+
+.height-410 {
+  height: 410px; }
+
+.height-420 {
+  height: 420px; }
+
+.height-430 {
+  height: 430px; }
+
+.height-440 {
+  height: 440px; }
+
+.height-450 {
+  height: 450px; }
+
+.height-460 {
+  height: 460px; }
+
+.height-470 {
+  height: 470px; }
+
+.height-480 {
+  height: 480px; }
+
+.height-490 {
+  height: 490px; }
+
+.height-500 {
+  height: 500px; }
+
+.height-510 {
+  height: 510px; }
+
+.height-520 {
+  height: 520px; }
+
+.height-530 {
+  height: 530px; }
+
+.height-540 {
+  height: 540px; }
+
+.height-550 {
+  height: 550px; }
+
+.height-560 {
+  height: 560px; }
+
+.height-570 {
+  height: 570px; }
+
+.height-580 {
+  height: 580px; }
+
+.height-590 {
+  height: 590px; }
+
+.height-600 {
+  height: 600px; }
+
+.height-610 {
+  height: 610px; }
+
+.height-620 {
+  height: 620px; }
+
+.height-630 {
+  height: 630px; }
+
+.height-640 {
+  height: 640px; }
+
+.height-650 {
+  height: 650px; }
+
+.height-660 {
+  height: 660px; }
+
+.height-670 {
+  height: 670px; }
+
+.height-680 {
+  height: 680px; }
+
+.height-690 {
+  height: 690px; }
+
+.height-700 {
+  height: 700px; }
+
+.height-710 {
+  height: 710px; }
+
+.height-720 {
+  height: 720px; }
+
+.height-730 {
+  height: 730px; }
+
+.height-740 {
+  height: 740px; }
+
+.height-750 {
+  height: 750px; }
+
+.height-760 {
+  height: 760px; }
+
+.height-770 {
+  height: 770px; }
+
+.height-780 {
+  height: 780px; }
+
+.height-790 {
+  height: 790px; }
+
+.height-800 {
+  height: 800px; }
+
+.height-810 {
+  height: 810px; }
+
+.height-820 {
+  height: 820px; }
+
+.height-830 {
+  height: 830px; }
+
+.height-840 {
+  height: 840px; }
+
+.height-850 {
+  height: 850px; }
+
+.height-860 {
+  height: 860px; }
+
+.height-870 {
+  height: 870px; }
+
+.height-880 {
+  height: 880px; }
+
+.height-890 {
+  height: 890px; }
+
+.height-900 {
+  height: 900px; }
+
+.height-910 {
+  height: 910px; }
+
+.height-920 {
+  height: 920px; }
+
+.height-930 {
+  height: 930px; }
+
+.height-940 {
+  height: 940px; }
+
+.height-950 {
+  height: 950px; }
+
+.height-960 {
+  height: 960px; }
+
+.height-970 {
+  height: 970px; }
+
+.height-980 {
+  height: 980px; }
+
+.height-990 {
+  height: 990px; }
+
+.height-1000 {
+  height: 1000px; }
+
 /* UI ELEMENTS */
 .scroll {
   overflow: scroll; }
@@ -390,38 +703,56 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: #5a228e; }
+  background-color: #1986FF; }
   @media (max-width: 600px) {
     .dialog {
       left: 0;
       width: 100%; } }
 
-.toolbar {
+.toolbar, .titlebar {
   position: absolute;
   width: 100%;
   bottom: 0;
   height: 50px;
-  background-color: #5a228e; }
-  .toolbar a.button, .toolbar a:link {
+  background-color: #0079ff; }
+  .toolbar .item, .titlebar .item {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    background-color: lighter(#5a228e, 10%);
+    background-color: #0079ff;
     text-decoration: none;
-    color: #0c0413; }
-    .toolbar a.button .button-title, .toolbar a:link .button-title {
+    color: #b2d6ff; }
+    .toolbar .item .button-title, .titlebar .item .button-title {
       padding: 5px;
       margin-top: 8px;
-      color: #0c0413; }
+      color: #b2d6ff; }
+  .toolbar a.button, .titlebar a.button, .toolbar a:link, .titlebar a:link {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    background-color: #0079ff;
+    text-decoration: none;
+    color: #b2d6ff; }
+    .toolbar a.button .button-title, .titlebar a.button .button-title, .toolbar a:link .button-title, .titlebar a:link .button-title {
+      padding: 5px;
+      margin-top: 8px;
+      color: #b2d6ff; }
+  .toolbar a:hover, .titlebar a:hover {
+    background-color: #4ca1ff; }
+
+.titlebar {
+  top: 0; }
 
 .valign-middle {
+  display: block;
   position: relative;
+  vertical-align: middle;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
+  .valign-middle h1, .valign-middle h2, .valign-middle h3, .valign-middle h4, .valign-middle h5, .valign-middle h6, .valign-middle p {
+    vertical-align: middle; }
 
 .text-center {
   text-align: center; }
-
-/*# sourceMappingURL=abs.css.map */

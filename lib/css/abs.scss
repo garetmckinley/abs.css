@@ -18,10 +18,21 @@ $interface-fg: rgb(170, 170, 170);
 /* UI COLORS */
 $dialog-bg: $interface-fg;
 
-$toolbar-bg: $interface-fg;
-$toolbar-button-bg: lighter($interface-fg, 10%);
-$toolbar-button-fg: darken($interface-fg, 30%);
+// Titlebar
+$titlebar-bg: darken($interface-fg, 5%);
+$titlebar-button-bg: darken($interface-fg, 5%);
+$titlebar-button-fg: lighten($interface-fg, 30%);
+$titlebar-button-bg-highlight: lighten($interface-fg, 10%);
+$titlebar-button-fg-highlight: lighten($interface-fg, 2%);
 
+$titlebar-height: 50px;
+
+// Toolbar
+$toolbar-bg: darken($interface-fg, 5%);
+$toolbar-button-bg: darken($interface-fg, 5%);
+$toolbar-button-fg: lighten($interface-fg, 30%);
+$toolbar-button-bg-highlight: lighten($interface-fg, 10%);
+$toolbar-button-fg-highlight: lighten($interface-fg, 2%);
 $toolbar-height: 50px;
 
 $dialog-columns: 6; // MUST BE AN EVEN NUMBER
@@ -30,7 +41,7 @@ $breakpoints: (
   "small"  : 600px,
   "medium" : 900px,
   "large"  : 1200px
-);
+  );
 
 $default-breakpoint: root;
 $current-breakpoint: $default-breakpoint;
@@ -58,6 +69,19 @@ $placeholders: ();
   transform: translateY(-50%);
 }
 
+::-webkit-scrollbar {
+  width:  10px;
+  height: 10px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darken($interface-fg, 5%);
+}
+
+::-webkit-scrollbar-track {
+  background: darken($interface-fg, 10%);
+}
 
 
 /*    APP SCREEN    */
@@ -67,6 +91,8 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+  scrollbar-face-color: darken($interface-fg, 5%);
+  scrollbar-track-color: darken($interface-fg, 10%);
 }
 
 .abs {
@@ -138,6 +164,12 @@ $i: 0;
   $i: $i + 1;
 }
 
+$i: 10;
+@while $i <= 1000 {
+  .height-#{$i} { height: #{$i}px; }
+  $i: $i + 10;
+}
+
 
 /* UI ELEMENTS */
 .scroll {
@@ -164,6 +196,20 @@ $i: 0;
   height: $toolbar-height;
   background-color: $toolbar-bg;
 
+  .item {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    background-color: $toolbar-button-bg;
+    text-decoration: none;
+    color: $toolbar-button-fg;
+    .button-title {
+      padding: 5px;
+      margin-top: 8px;
+      color: $toolbar-button-fg;
+    }
+  }
+
   a.button, a:link {
     display: inline-block;
     height: 100%;
@@ -177,10 +223,48 @@ $i: 0;
       color: $toolbar-button-fg;
     }
   }
+  a:hover {
+    background-color: $titlebar-button-bg-highlight;
+  }
 }
 
+.titlebar {
+  @extend .toolbar;
+  top: 0;
+}
+
+// .titlebar {
+//   position: absolute;
+//   width: 100%;
+//   top: 0;
+//   height: $titlebar-height;
+//   background-color: $titlebar-bg;
+
+//   a.button, a:link {
+//     display: inline-block;
+//     height: 100%;
+//     vertical-align: middle;
+//     background-color: $titlebar-button-bg;
+//     text-decoration: none;
+//     color: $titlebar-button-fg;
+//     .button-title {
+//       padding: 5px;
+//       margin-top: 8px;
+//       color: $titlebar-button-fg;
+//     }
+//   }
+//   a:hover {
+//     background-color: $titlebar-button-bg-highlight;
+//   }
+// }
+
 .valign-middle {
+  display: block;
   position: relative;
+  vertical-align: middle;
+  h1, h2, h3, h4, h5, h6, p {
+    vertical-align: middle;
+  }
   @include valign();
 }
 
