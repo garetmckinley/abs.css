@@ -8,10 +8,10 @@
   display: none; }
 
 ::-webkit-scrollbar-thumb {
-  background: #0079ff; }
+  background: #4d1d79; }
 
 ::-webkit-scrollbar-track {
-  background: #006de5; }
+  background: #401865; }
 
 /*    APP SCREEN    */
 body {
@@ -20,8 +20,8 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  scrollbar-face-color: #0079ff;
-  scrollbar-track-color: #006de5; }
+  scrollbar-face-color: #4d1d79;
+  scrollbar-track-color: #401865; }
 
 .abs {
   position: absolute; }
@@ -703,7 +703,7 @@ body {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: #1986FF; }
+  background-color: #5a228e; }
   @media (max-width: 600px) {
     .dialog {
       left: 0;
@@ -714,31 +714,31 @@ body {
   width: 100%;
   bottom: 0;
   height: 50px;
-  background-color: #0079ff; }
+  background-color: #4d1d79; }
   .toolbar .item, .titlebar .item {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    background-color: #0079ff;
+    background-color: #4d1d79;
     text-decoration: none;
-    color: #b2d6ff; }
+    color: #a76ddc; }
     .toolbar .item .button-title, .titlebar .item .button-title {
       padding: 5px;
       margin-top: 8px;
-      color: #b2d6ff; }
+      color: #a76ddc; }
   .toolbar a.button, .titlebar a.button, .toolbar a:link, .titlebar a:link {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    background-color: #0079ff;
+    background-color: #4d1d79;
     text-decoration: none;
-    color: #b2d6ff; }
+    color: #a76ddc; }
     .toolbar a.button .button-title, .titlebar a.button .button-title, .toolbar a:link .button-title, .titlebar a:link .button-title {
       padding: 5px;
       margin-top: 8px;
-      color: #b2d6ff; }
+      color: #a76ddc; }
   .toolbar a:hover, .titlebar a:hover {
-    background-color: #4ca1ff; }
+    background-color: #742cb7; }
 
 .titlebar {
   top: 0; }
