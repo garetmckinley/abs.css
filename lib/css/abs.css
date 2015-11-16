@@ -1,7 +1,7 @@
-/*    GRID SYSTEM   */
-/* PADDING */
-/* COLORS */
-/* UI COLORS */
+/*
+ * abs.css - [abs]olute positioning system
+ * 0.0.1 - http://mediachicken.github.io/abs.css
+ */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -24,7 +24,14 @@ body {
   scrollbar-track-color: #006de5; }
 
 .abs {
-  position: absolute; }
+  position: absolute !important; }
+
+.animated {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.hidden {
+  display: none; }
 
 .fullscreen {
   width: 100%;
