@@ -1,21 +1,26 @@
-/*    GRID SYSTEM   */
+/*
+ * abs.css - [abs]olute positioning system
+ * 0.0.1 - http://mediachicken.github.io/abs.css
+ */
+
+// GRID SYSTEM
 $max-layers: 50;
 $max-columns: 12;
 $max-rows: 8;
 
-/* PADDING */
+// PADDING
 $padding-top: 10px;
 $padding-right: 10px;
 $padding-bottom: 10px;
 $padding-left: 10px;
 
-/* COLORS */
+// COLORS
 $interface-bg: rgb(170, 170, 170);
 $interface-fg: rgb(170, 170, 170);
 
 @import "colors";
 
-/* UI COLORS */
+// UI COLORS
 $dialog-bg: $interface-fg;
 
 // Titlebar
@@ -96,7 +101,16 @@ body {
 }
 
 .abs {
-  position: absolute;
+  position: absolute !important;
+}
+
+.animated {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hidden {
+  display: none;
 }
 
 .fullscreen {
@@ -166,7 +180,9 @@ $i: 0;
 
 $i: 10;
 @while $i <= 1000 {
-  .height-#{$i} { height: #{$i}px; }
+  .height-#{$i} { 
+    height: #{$i}px;
+  }
   $i: $i + 10;
 }
 
