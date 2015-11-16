@@ -27,7 +27,6 @@ handleScreenSpecificElements = () ->
 		if typeof $(element).data('min-height') != 'undefined'
 			rows = 8
 			row_height = $(element).parent().height() / rows
-			console.log $(element).parent().height()
 			row = null
 			min_height = parseInt($(element).data('min-height'))
 			for i in [1..8]
